@@ -1,7 +1,7 @@
 # gauge-java-maven-selenium-page-factory-extended
 
 This is an example project, which extends Selenium Page Factory pattern, to work with AngularJS applications.
-Approach is to NOT to use @FindBy provided by Selenium. This is purely because @FindBy is very helpful for static elements, and not for elements that are dynamically loaded.
+Approach is to NOT to use @FindBy provided by Selenium. This is purely because @FindBy is very helpful for static elements (not for elements that are dynamically loaded).
 In AngularJS applications, elements are not loaded instantly and Selenium needs to wait for the element to load or do a regular check for it's existence (using Expected conditions).
 In that cases, @FindBy would not work and you have to use By selectors.
 

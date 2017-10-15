@@ -29,7 +29,7 @@ public abstract class BasePage {
     }
 
     public void selectByVisibleText(By locator, String visibleText){
-        new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeSelected(locator));
+        new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(locator));
         Select select = new Select(this.driver.findElement(locator));
         select.selectByVisibleText(visibleText);
 

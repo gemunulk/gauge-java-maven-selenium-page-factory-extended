@@ -28,7 +28,7 @@ public class RegistrationSpec {
     }
 
     @Step("Fill Mailing Information section <table>")
-    public void implementation3(Table table) {
+    public void fillMailingInfo(Table table) {
 
         for (TableRow row : table.getTableRows()) {
 

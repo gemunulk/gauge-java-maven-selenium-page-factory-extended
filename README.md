@@ -1,4 +1,4 @@
-# gauge-java-maven-selenium-modified-page-factory
+# gauge-java-maven-selenium-page-factory-extended
 
 This is an example project, illustrating how to do test automation using [Gauge](https://github.com/getgauge/gauge) test automation framework, with Java support.
 

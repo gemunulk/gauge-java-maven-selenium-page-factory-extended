@@ -15,6 +15,7 @@ public class LoginPage extends BasePage {
 
     public void visit(){
         driver.get(Url);
+        driver.manage().window().maximize();
     }
 
     public void login(String username, String password){

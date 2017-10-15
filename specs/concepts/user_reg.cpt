@@ -1,0 +1,13 @@
+Created by gemunu on 9/27/17
+
+This is a concept file with following syntax for each concept.
+# Register Gemunu
+* Fill Contact Information section
+    |FirstName|LastName         |Phone|Email       |
+    |---------|-----------------|-----|------------|
+    |Gemunu   |Priyadarshana    |119  |abc@test.com|
+
+* Fill Mailing Information section
+    |Address1|Address2   |City  |State/Province|PostCode|Country    |
+    |151     |Isadin Town|Matara|Suthern       |82600   |Sri Lanka  |
+

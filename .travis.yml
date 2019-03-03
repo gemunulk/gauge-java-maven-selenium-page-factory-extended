@@ -9,11 +9,10 @@ before_script:
   - sudo apt-get install gauge
 
 language: java
-jdk:
-  - oraclejdk8
-sudo: required
-# command to run tests
+jdk: oraclejdk8
 script:
+  - ./mvnw clean install
+  - ./mvnw gauge:execute -DspecsDir=specs
   - mvn gauge:execute -DspecsDir=specs
   - mvn clean verify
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V

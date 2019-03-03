@@ -1,4 +1,4 @@
-# gauge-java-maven-selenium-page-factory-extended
+# gauge-java-maven-selenium-page-factory-extended [![Build Status](https://travis-ci.org/gemunulk/gauge-java-maven-selenium-page-factory-extended.svg?branch=master)](https://travis-ci.org/gemunulk/gauge-java-maven-selenium-page-factory-extended)
 
 This is an example project, which extends Selenium Page Factory pattern, to work with AngularJS applications.
 Approach is to NOT to use @FindBy provided by Selenium. This is purely because @FindBy is very helpful for static elements (not for elements that are dynamically loaded).

@@ -14,6 +14,6 @@ jdk:
 sudo: required
 # command to run tests
 script:
+  - mvn gauge:execute -DspecsDir=specs
   - mvn clean verify
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn gauge:execute -DspecsDir=specs

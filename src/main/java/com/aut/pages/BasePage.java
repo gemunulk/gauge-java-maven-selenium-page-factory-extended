@@ -40,5 +40,14 @@ public abstract class BasePage {
         return this.driver.findElement(locator).getText();
     }
 
+    public String getAttribute(By locator, String attribute){
+        new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(locator));
+        return this.driver.findElement(locator).getAttribute(attribute);
+    }
+
+    public boolean isSelected(By locator, String attribute){
+        new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(locator));
+        return this.driver.findElement(locator).isSelected();
+    }
 
 }

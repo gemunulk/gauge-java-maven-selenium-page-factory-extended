@@ -9,7 +9,7 @@ before_script:
   - sudo apt-get install gauge
 
 language: java
-jdk: oraclejdk7
+jdk: oraclejdk8
 script:
   - mvn clean verify
   - mvn gauge:execute -DspecsDir=specs

@@ -11,5 +11,7 @@ before_script:
 language: java
 jdk: oraclejdk11
 script:
+  - gauge telemetry off
+  - gauge -v
   - mvn clean verify
   - mvn gauge:execute -DspecsDir=specs

@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverFactory {
     private static final String FIREFOX = "firefox";
@@ -39,8 +40,12 @@ public class DriverFactory {
                 FirefoxDriverManager.getInstance().setup();
                 driver = new FirefoxDriver();
             default:
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.setBinary("/usr/bin/google-chrome-stable");
+                chromeOptions.addArguments("--headless");
+                
                 ChromeDriverManager.getInstance().setup();
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(chromeOptions);
 
         }
     }

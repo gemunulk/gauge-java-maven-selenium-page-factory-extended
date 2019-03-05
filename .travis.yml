@@ -14,5 +14,5 @@ script:
   - gauge telemetry off
   - gauge install java
   - gauge -v
-  - mvn gauge:execute -DspecsDir=specs
+  - mvn gauge:execute -DspecsDir=specs -DinParallel=true
 
